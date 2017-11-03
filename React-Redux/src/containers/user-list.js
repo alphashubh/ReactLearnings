@@ -8,11 +8,11 @@ class UserList extends React.Component{
     createList(){
         return this.props.user.map((user) => {
             return(
-                <li 
+                <li className="btn btn-light "
                 key={user.id} 
                 onClick={()=> this.props.selectUser(user)}
                 >
-                <h3>{user.first} {user.last}</h3>
+                <h3>{user.first} {user.last}<br/></h3>
                 </li>
             )
         })
